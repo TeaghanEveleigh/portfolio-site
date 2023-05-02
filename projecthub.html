@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Header Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header-container">
+        <header class="site-header">
+            <h1 class="site-title"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-archive" viewBox="0 0 16 16">
+                <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+              </svg></h1>
+            <nav class="main-navigation">
+                <ul class="nav-list">
+                    <li class="nav-item-projects"><a href="#home" class="nav-link projects">Projects</a></li>
+                    <li class="nav-item about "><a href="./about.html" class="nav-link about">About</a></li>
+                    <li class="nav-item github"><a href="#services" class="nav-link linkdin"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                      </svg></a></li>
+                    <li class="nav-item linkdin"><a href="#contact" class="nav-link github"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                      </svg></a></li>
+                </ul>
+            </nav>
+            <button id="menu-button" class="menu-button">Menu <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" style="vertical-align: -4px;">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+             </button>
+        </header>
+        <div id="dropdown" class="dropdown">
+            <ul class="dropdown-nav-list">
+                
+                
+                <li class="dropdown-nav-item"><a href="./projecthub.html" class="dropdown-nav-link projects">Projects</a></li>
+                <li class="dropdown-nav-item"><a href="./about.html" class="dropdown-nav-link about">About</a></li>
+                <li class="dropdown-nav-item"><a href="#contact" class="dropdown-nav-link linkdin">Linkdin <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                  </svg></a></li>
+                <li class="dropdown-nav-item"><a href="#contact" class="dropdown-nav-link github">Github <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                  </svg></a></li>
+            </ul>
+        </div>
+    </div>
+  
+    <section class="about-section-section">
+        
+        <div class="about-section">
+            <div class="about-section-text">
+                <hr>
+                <h1>Projects</h1>
+                <p>Hello and welcome to my site I am Teaghan and I am seeking a software engeneering internships inside this site you will find links to many of my projects which I have worked on below you will find more information about the projects but for now feel free to use these links to navigate through the different projects github links I have made use of the following languages (html/css/JS/C++/Java) throughout my coding journey</p>
+                <hr>
+            </div>
+        </div>
+
+
+
+    </section>
+    <section class="projects-section" >
+        <div class="grid-container">
+            
+            <div class="grid-item" id="bnz-banking" data-link="https://github.com/TeaghanEveleigh/bnzzz">
+
+                <div class="project-description" >
+                    <p>Bnz banking app clone in the command line/C++</p>
+                </div>
+            </div>
+            <div class="grid-item" id="chess-game">
+                
+              <div class="project-description">
+                  <p>Online Chess game/JS</p>
+              </div>
+          </div>
+            <div class="grid-item" id="discord-bot">
+      
+                <div class="project-description">
+                    <p>Discord Bot/JS</p>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+    <section class="bnz-banking first" >
+        <div class="bnz-banking-container">
+          <div class="bnz-banking-text">
+            <h1>BNZ Banking</h1>
+            <hr>
+            <p>BNZ banking is a clone of the BNZ banking app/ made with C++ the project uses various elements of the c++ STL library and makes use of modern c++ 11 features. This project is a command line interface  the users information is stored using a hashmap algorythm and the user has the ability to: </p>
+            <ul>
+              <li>View their account balance</li>
+              <li>View their transaction history</li>
+              <li>Make a deposit</li>
+              <li>Make a withdrawl</li>
+              <li>Make a transfer</li>
+              <li>Add friends to a quick pay list</li>
+              <li>View their account information</li>
+            </ul>
+            <a href="https://github.com/TeaghanEveleigh/bnzzz" role="button" tabindex="0" class="btn btn-primary">
+                Github <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+              
+          </div>
+          <div class="bnz-banking-image">
+            <img src="./resources/bnzproject.jpg" alt="Image description">
+            
+          </div>
+        
+        </div>
+      
+      </section>
+      <section class="bnz-banking second" >
+        <div class="bnz-banking-container">
+          <div class="bnz-banking-text">
+            <h1>WebApp</h1>
+            <hr>
+            <p>BNZ banking is a clone of the BNZ banking app/ made with C++ the project uses various elements of the c++ STL library and makes use of modern c++ 11 features. This project is a command line interface  the users information is stored using a hashmap algorythm and the user has the ability to: </p>
+            <ul>
+              <li>View their account balance</li>
+              <li>View their transaction history</li>
+              <li>Make a deposit</li>
+              <li>Make a withdrawl</li>
+              <li>Make a transfer</li>
+              
+            </ul>
+            <a href="https://github.com/TeaghanEveleigh/bnzzz" role="button" tabindex="0" class="btn btn-primary">
+                Github <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+              <a href="https://github.com/TeaghanEveleigh/bnzzz" role="button" tabindex="0" class="btn btn-primary">
+                Website <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-browser-chrome" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M16 8a8.001 8.001 0 0 1-7.022 7.94l1.902-7.098a2.995 2.995 0 0 0 .05-1.492A2.977 2.977 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8ZM0 8a8 8 0 0 0 7.927 8l1.426-5.321a2.978 2.978 0 0 1-.723.255 2.979 2.979 0 0 1-1.743-.147 2.986 2.986 0 0 1-1.043-.7L.633 4.876A7.975 7.975 0 0 0 0 8Zm5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a2.979 2.979 0 0 0-1.252.243 2.987 2.987 0 0 0-1.81 2.59ZM8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+                  </svg>
+              </a>
+          </div>
+          <div class="bnz-banking-image">
+            <img src="./resources/bnzproject.jpg" alt="Image description">
+            
+          </div>
+        
+        </div>
+      
+      </section>
+      <section class="bnz-banking last" >
+        <div class="bnz-banking-container">
+          <div class="bnz-banking-text">
+            <h1>Website</h1>
+            <hr>
+            <p>BNZ banking is a clone of the BNZ banking app/ made with C++ the project uses various elements of the c++ STL library and makes use of modern c++ 11 features. This project is a command line interface  the users information is stored using a hashmap algorythm and the user has the ability to: </p>
+            <ul>
+              <li>View their account balance</li>
+              <li>View their transaction history</li>
+              <li>Make a deposit</li>
+              <li>Make a withdrawl</li>
+              <li>Make a transfer</li>
+              <li>Add friends to a quick pay list</li>
+              <li>View their account information</li>
+            </ul>
+            <a href="https://github.com/TeaghanEveleigh/bnzzz" role="button" tabindex="0" class="btn btn-primary">
+                Github <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+              <a href="https://github.com/TeaghanEveleigh/bnzzz" role="button" tabindex="0" class="btn btn-primary">
+                Website <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-browser-chrome" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M16 8a8.001 8.001 0 0 1-7.022 7.94l1.902-7.098a2.995 2.995 0 0 0 .05-1.492A2.977 2.977 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8ZM0 8a8 8 0 0 0 7.927 8l1.426-5.321a2.978 2.978 0 0 1-.723.255 2.979 2.979 0 0 1-1.743-.147 2.986 2.986 0 0 1-1.043-.7L.633 4.876A7.975 7.975 0 0 0 0 8Zm5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a2.979 2.979 0 0 0-1.252.243 2.987 2.987 0 0 0-1.81 2.59ZM8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+                  </svg>
+              </a>
+              
+          </div>
+          <div class="bnz-banking-image">
+            <img src="./resources/bnzproject.jpg" alt="Image description">
+            
+          </div>
+        
+        </div>
+      
+      </section>
+      
+      
+    
+
+    <section class="project1">
+
+
+
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+

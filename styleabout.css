@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #444;
+}
+
+.header-container {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.site-header {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+
+.site-title {
+    color: #f8f6f6;
+    margin: 0px;
+    
+    
+    
+}
+#dropdown .about{
+    color: #4f4c4c;
+}
+.dropdown-nav-link{
+    color: #ffffff;
+}
+.main-navigation .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-navigation .nav-item {
+    margin-left: 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #ccc;
+    text-decoration: underline;
+    
+}
+
+.menu-button {
+    display: none;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-color: #f0f0f0;
+    border-radius: 10px;
+    font-size: 16px;
+
+}
+
+.menu-button:hover {
+    background-color: #444;
+}
+.about{
+    color: rgb(98, 87, 87);
+    
+}
+
+
+.dropdown {
+    display: none;
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+    background-color: #000000;
+    width: 100%;
+    z-index: 9999;
+    overflow: hidden;
+    max-height: 200px;
+    transition: max-height 2s ease-out; /* Add this line */
+}
+
+.dropdown-nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-nav-item {
+    text-align: center;
+    padding: 8px;
+}
+
+.dropdown-nav-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.dropdown-nav-link:hover {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+@media (max-width: 1150px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .main-navigation {
+        display: none;
+    }
+    .grid-container {
+        gap: 3rem;
+      }
+
+    .menu-button {
+        display: block;
+        border-radius: 10px;
+    }
+    .grid-item{
+        margin:0px
+    }
+}
+@media (min-width: 1150px) {
+    .dropdown {
+      display: none;
+    }
+    .grid-item{
+        height: 300px;
+        
+    }
+  }

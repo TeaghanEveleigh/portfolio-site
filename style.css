@@ -1,0 +1,462 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(285, 9%, 18%);
+}
+
+.header-container {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    border-bottom: solid white 1px;
+}
+
+.site-header {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+
+.site-title {
+    color: #f8f6f6;
+    margin: 0px;
+    
+    
+    
+}
+#dropdown .projects{
+    color: #454242;
+}
+.dropdown-nav-link{
+    color: #ffffff;
+}
+.main-navigation .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-navigation .nav-item {
+    margin-left: 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #ccc;
+    text-decoration: underline;
+    
+}
+
+.menu-button {
+    display: none;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-color: #f0f0f0;
+    border-radius: 10px;
+    font-size: 16px;
+
+}
+
+.menu-button:hover {
+    background-color: #3b3a3a;
+}
+.projects{
+    color: rgb(81, 82, 85);
+    text-decoration: underline;
+   
+    
+}
+
+
+.dropdown {
+    display: none;
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+    background-color: #000000;
+    width: 100%;
+    z-index: 9999;
+    overflow: hidden;
+    max-height: 200px;
+    transition: max-height 2s ease-out; /* Add this line */
+    border-bottom: solid white 1px;
+}
+
+.dropdown-nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-nav-item {
+    text-align: center;
+    padding: 8px;
+}
+
+.dropdown-nav-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.dropdown-nav-link:hover {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+.projects-section {
+    padding: 2rem; /* Adjust this value to increase or decrease the space from the screen edges */
+    position: relative;
+    top: 100px;
+    background-image: url(./resources/chris-ried-ieic5Tq8YMk-unsplash.jpg);
+  background-size: cover;
+    
+    
+    
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* increase minmax value */
+    gap: 1rem;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.grid-item {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    height: 200px;
+    margin: 10px;
+    position: relative; /* Add this line */
+}
+.grid-item:hover .project-description {
+    color: #fff;
+}
+.grid-item .project-description{
+  color: #000000!important;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%; /* 4:3 aspect ratio */
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+@media (max-width: 1150px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .main-navigation {
+        display: none;
+    }
+    .grid-container {
+        gap: 3rem;
+      }
+
+    .menu-button {
+        display: block;
+        border-radius: 10px;
+    }
+    .grid-item{
+        margin:0px
+    }
+}
+.project-image:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.15);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    position: absolute; /* Add this line */
+}
+
+
+.grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.grid-item:hover .project-image:before {
+    opacity: 1;
+}
+.project-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Add this line */
+}
+@media (min-width: 1150px) {
+    .dropdown {
+      display: none;
+    }
+    .grid-item{
+        height: 300px;s
+        
+    }
+  }
+
+  #bnz-banking {
+    background-image: url('resources/bnz-logo-bnz-letter-bnz-letter-logo-design-initials-bnz-logo-linked-with-circle-and-uppercase-monogram-logo-bnz-typography-for-technology-business-and-real-estate-brand-vector.webp');
+    background-size: cover;
+    background-position: center;
+    
+}
+#discord-bot{
+  background-image: url('resources/Discord-Black.webp');
+    background-size: cover;
+    background-position: center;
+}
+#chess-game{
+  background-image: url('resources/business_chess_1200074974.webp');
+    background-size:cover;
+    background-position: center;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #302a32;
+    
+  }
+  .about-section-section{
+    background-color: #302a32
+  }
+  
+  .about-text {
+    flex: 1;
+    padding-right: 2rem;
+    color: #ffffff !important;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #eaeaea !important;
+  }
+  
+  .about-text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    color: #ffffff !important; 
+  }
+  .about-section-text{
+    color: #ffffff !important;
+  }
+  
+  .about-image {
+    flex: 1;
+    max-width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .about-section {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    
+    .about-text {
+      flex: 1;
+      padding-right: 4rem;
+    }
+  
+    .about-image {
+      flex: 1;
+      max-width: 50%;
+    }
+  }
+  .about-section{
+    position: relative;
+    top: 100px;
+  }
+  .bnz-banking h1{
+    color: rgb(255, 255, 255);
+  }
+  .bnz-banking p{
+    color:rgb(255, 255, 255);
+  }
+  .bnz-banking{
+    position: relative;
+    top: 100px;
+  }
+  
+  .bnz-banking {
+    background-color: #484747; /* dark grey background */
+    color: white; /* white text */
+    padding: 50px 0; /* add some padding to the top and bottom of the section */
+  }
+  
+  .bnz-banking-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin:  auto;
+  }
+  
+  .bnz-banking-text {
+    flex-basis: 50%;
+    margin-right: 20px;
+    margin-left: 30px;
+  }
+  
+  .bnz-banking-image {
+    flex-basis: 50%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    
+  }
+  
+  .bnz-banking-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; /* set a maximum height for the image */
+    border-radius: 10px;
+  }
+  
+  .bnz-banking-text a,
+  .bnz-banking-text a {
+    background-color: #ffffff; /* white background for the button and links */
+    color: #333333; /* dark grey text for the button and links */
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 20px;
+    border-radius: 10px;
+  }
+  
+  .bnz-banking-text a:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px 2px rgba(205, 202, 202, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .bnz-banking-text a:hover,
+  .bnz-banking-text button:hover {
+    background-color: #cccccc; /* light grey background on hover */
+    
+  }
+  
+  .bnz-banking-text p {
+    line-height: 1.5; /* add some line-height to improve readability */
+    padding: 20px;
+  }
+  
+  .bnz-banking-text h1 {
+    margin-bottom: 20px; /* add some space below the heading */
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .bnz-banking-container {
+      flex-direction: column;
+    }
+  
+    .bnz-banking-text,
+    .bnz-banking-image {
+      flex-basis: 100%;
+      margin: 20px;
+      border-radius: 20px;
+    }
+  
+    .bnz-banking-image {
+      margin-top: 0;
+      border-radius: 20px;
+    }
+  }
+  .second{
+    background-color: #2a2929;
+    background-image: url('resources/shahadat-rahman-gnyA8vd3Otc-unsplash.jpg');
+   
+    background-size:cover;
+    background-position: center;
+  }
+  .second h1{
+    color: rgb(255, 255, 255);
+  }
+  .second p{
+    color:rgb(255, 255, 255);
+  }
+  .second li{
+    color:rgb(255, 255, 255);
+  }
+  
+  a{
+    margin-top: 10px;
+  }
+
+  .last{
+    background-color: #302a32;
+   
+  }
+  .last li{
+    color:rgb(255, 255, 255);
+  }
+  .last p{
+    color:rgb(255, 255, 255);
+  }
+  .last h1{
+    color: rgb(255, 255, 255);
+  }
+  
+  .project-description p{
+    color: rgb(253, 253, 253);
+  }
+  .first{
+    background-color: #302a32;
+   
+  }
+  .first h1{
+    color: rgb(255, 255, 255);
+  }
+  .first p{
+    color:rgb(255, 255, 255);
+  }
+  .first li{
+    color:rgb(255, 255, 255);
+  }
+  
+  
