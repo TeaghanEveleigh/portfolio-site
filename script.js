@@ -35,6 +35,26 @@ menuButton.addEventListener('click', function() {
     menuButton.innerHTML += '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" style="vertical-align: -4px;"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>';
   }
 });
+document.querySelector('#return-to-top').addEventListener('click', () => {
+  /* Circle animation */
+  document.querySelector('#return-to-top').animate(
+    { transform: ['rotate(90deg)', 'rotate(505deg)'] },
+    { duration: 1500, easing: 'cubic-bezier(0.37, 0.48, 0.31, 1.47)' }
+  );
+  
+  /* Scroll to top */
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+const element = document.getElementsByClassName('bnz-banking-text');
+
+    window.addEventListener('scroll', function() {
+      const elementTop = element.getBoundingClientRect().top;
+
+      if (elementTop < window.innerHeight) {
+        // element is in view, move it to the left
+        element.style.left = '-50px';
+      }
+    });
 
 
 

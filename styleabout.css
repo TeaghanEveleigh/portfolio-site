@@ -2,13 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #444;
+    background-color: hsl(285, 9%, 18%);
 }
 
 .header-container {
     position: fixed;
     width: 100%;
     z-index: 100;
+    border-bottom: solid white 1px;
 }
 
 .site-header {
@@ -74,7 +75,7 @@ body {
 }
 .about{
     color: rgb(98, 87, 87);
-    
+    text-decoration: underline;
 }
 
 
@@ -90,6 +91,7 @@ body {
     overflow: hidden;
     max-height: 200px;
     transition: max-height 2s ease-out; /* Add this line */
+    border-bottom: solid white 1px;
 }
 
 .dropdown-nav-list {
@@ -103,10 +105,27 @@ body {
     padding: 8px;
 }
 
-.dropdown-nav-link {
-    text-decoration: none;
-    color: #fff;
+.dropdown-nav-link:hover {
+    color: #ccc;
+    text-decoration: underline;
 }
+#return-to-top {
+    transition: 0.5s ease-in-out;
+    z-index: 99;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--main);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    border-radius: 50%;
+    transform: rotate(180deg); /* Add this line to rotate the element */
+  }
+  html {
+    scroll-behavior: smooth;
+  }
 
 .dropdown-nav-link:hover {
     color: #ccc;
@@ -150,3 +169,90 @@ body {
         
     }
   }
+  a{
+    margin-top: 10px;
+  }
+  .main-navigation a {
+    float: left;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: relative;
+    left: 120px;
+    z-index: 1;
+    overflow: hidden;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    padding: 5px 5PX;
+    border: none;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main-navigation,.dropdown-nav-item a:hover {
+    background-color: #010000 !important;
+}
+
+span {
+    position: relative;
+    z-index: 1;
+    line-height: 24px;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+}
+a:hover span {
+    color: #5a5a5a;
+}
+.btnBefore, .btnAfter {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: solid #000;
+    border-width: 0;
+    border-radius: 0;
+    transition: 0;
+    -webkit-transition: 0;
+    -moz-transition: 0;
+    -o-transition: 0;
+    -ms-transition: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-color: #fffefd;
+    border-radius: 5px;
+}
+a .btnBefore {
+    right: 0;
+    bottom: 0;
+}
+a .btnAfter {
+    left: 0;
+    top: 0;
+}
+a:hover .btnBefore {
+    border-width: 0 0 1px 1px;
+}
+a:hover .btnAfter {
+    border-width: 1px 1px 0 0;
+}
+
+a:hover .btnAfter, a:hover .btnBefore {
+height: 100%;
+width: 100%;
+transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+-webkit-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+-moz-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+-o-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+-ms-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+}
