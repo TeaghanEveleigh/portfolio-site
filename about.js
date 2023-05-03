@@ -72,84 +72,64 @@ const element = document.getElementsByClassName('bnz-banking-text');
       delay += 500;
     });
     document.addEventListener('DOMContentLoaded', () => {
-      const gridItems = document.querySelectorAll('.grid-item');
-      
-      gridItems.forEach((item, index) => {
-        setTimeout(() => {
-          item.classList.add('hover-effect');
-          setTimeout(() => {
-            item.classList.remove('hover-effect');
-          }, 350);
-        }, index * 350);
+        const navLinks = document.querySelectorAll('.nav-list a');
+        const secondNavLink = navLinks[1];
+        applyHoverEffect(secondNavLink);
       });
-    });
-    document.addEventListener('DOMContentLoaded', () => {
-      const navLinks = document.querySelectorAll('.nav-list a');
-      const firstNavLink = navLinks[0];
-      applyHoverEffect(firstNavLink);
-    });
-    
-    function applyHoverEffect(link) {
-      const hoverStyle = {
-        color: '#5a5a5a',
-        borderColor: '#fffefd',
-        borderWidthBefore: '0 0 1px 1px',
-        borderWidthAfter: '1px 1px 0 0',
-        widthBeforeAfter: '100%',
-        heightBeforeAfter: '100%',
-        borderRadiusBeforeAfter: '5px',
-        transitionDuration: '0.5s'
-      };
-    
-      const defaultStyle = {
-        color: '',
-        borderColor: '',
-        borderWidthBefore: '',
-        borderWidthAfter: '',
-        widthBeforeAfter: '',
-        heightBeforeAfter: '',
-        borderRadiusBeforeAfter: '',
-        transitionDuration: ''
-      };
-    
-      const span = link.querySelector('span');
-      const btnBefore = link.querySelector('.btnBefore');
-      const btnAfter = link.querySelector('.btnAfter');
-    
-      span.style.color = hoverStyle.color;
-      btnBefore.style.borderColor = hoverStyle.borderColor;
-      btnBefore.style.borderWidth = hoverStyle.borderWidthBefore;
-      btnAfter.style.borderColor = hoverStyle.borderColor;
-      btnAfter.style.borderWidth = hoverStyle.borderWidthAfter;
-      btnBefore.style.width = hoverStyle.widthBeforeAfter;
-      btnBefore.style.height = hoverStyle.heightBeforeAfter;
-      btnAfter.style.width = hoverStyle.widthBeforeAfter;
-      btnAfter.style.height = hoverStyle.heightBeforeAfter;
-      btnBefore.style.borderRadius = hoverStyle.borderRadiusBeforeAfter;
-      btnAfter.style.borderRadius = hoverStyle.borderRadiusBeforeAfter;
-      btnBefore.style.transitionDuration = hoverStyle.transitionDuration;
-      btnAfter.style.transitionDuration = hoverStyle.transitionDuration;
-    
-      setTimeout(() => {
-        span.style.color = defaultStyle.color;
-        btnBefore.style.borderColor = defaultStyle.borderColor;
-        btnBefore.style.borderWidth = defaultStyle.borderWidthBefore;
-        btnAfter.style.borderColor = defaultStyle.borderColor;
-        btnAfter.style.borderWidth = defaultStyle.borderWidthAfter;
-        btnBefore.style.width = defaultStyle.widthBeforeAfter;
-        btnBefore.style.height = defaultStyle.heightBeforeAfter;
-        btnAfter.style.width = defaultStyle.widthBeforeAfter;
-        btnAfter.style.height = defaultStyle.heightBeforeAfter;
-        btnBefore.style.borderRadius = defaultStyle.borderRadiusBeforeAfter;
-        btnAfter.style.borderRadius = defaultStyle.borderRadiusBeforeAfter;
-        btnBefore.style.transitionDuration = defaultStyle.transitionDuration;
-        btnAfter.style.transitionDuration = defaultStyle.transitionDuration;
-      }, 1000);
-    }
-    
-
-
-
-
-
-
+      function applyHoverEffect(link) {
+        const hoverStyle = {
+          color: '#5a5a5a',
+          borderColor: '#fffefd',
+          borderWidthBefore: '0 0 1px 1px',
+          borderWidthAfter: '1px 1px 0 0',
+          widthBeforeAfter: '100%',
+          heightBeforeAfter: '100%',
+          borderRadiusBeforeAfter: '5px',
+          transitionDuration: '0.5s'
+        };
+      
+        const defaultStyle = {
+          color: '',
+          borderColor: '',
+          borderWidthBefore: '',
+          borderWidthAfter: '',
+          widthBeforeAfter: '',
+          heightBeforeAfter: '',
+          borderRadiusBeforeAfter: '',
+          transitionDuration: ''
+        };
+      
+        const span = link.querySelector('span');
+        const btnBefore = link.querySelector('.btnBefore');
+        const btnAfter = link.querySelector('.btnAfter');
+      
+        span.style.color = hoverStyle.color;
+        btnBefore.style.borderColor = hoverStyle.borderColor;
+        btnBefore.style.borderWidth = hoverStyle.borderWidthBefore;
+        btnAfter.style.borderColor = hoverStyle.borderColor;
+        btnAfter.style.borderWidth = hoverStyle.borderWidthAfter;
+        btnBefore.style.width = hoverStyle.widthBeforeAfter;
+        btnBefore.style.height = hoverStyle.heightBeforeAfter;
+        btnAfter.style.width = hoverStyle.widthBeforeAfter;
+        btnAfter.style.height = hoverStyle.heightBeforeAfter;
+        btnBefore.style.borderRadius = hoverStyle.borderRadiusBeforeAfter;
+        btnAfter.style.borderRadius = hoverStyle.borderRadiusBeforeAfter;
+        btnBefore.style.transitionDuration = hoverStyle.transitionDuration;
+        btnAfter.style.transitionDuration = hoverStyle.transitionDuration;
+      
+        setTimeout(() => {
+          span.style.color = defaultStyle.color;
+          btnBefore.style.borderColor = defaultStyle.borderColor;
+          btnBefore.style.borderWidth = defaultStyle.borderWidthBefore;
+          btnAfter.style.borderColor = defaultStyle.borderColor;
+          btnAfter.style.borderWidth = defaultStyle.borderWidthAfter;
+          btnBefore.style.width = defaultStyle.widthBeforeAfter;
+          btnBefore.style.height = defaultStyle.heightBeforeAfter;
+          btnAfter.style.width = defaultStyle.widthBeforeAfter;
+          btnAfter.style.height = defaultStyle.heightBeforeAfter;
+          btnBefore.style.borderRadius = defaultStyle.borderRadiusBeforeAfter;
+          btnAfter.style.borderRadius = defaultStyle.borderRadiusBeforeAfter;
+          btnBefore.style.transitionDuration = defaultStyle.transitionDuration;
+          btnAfter.style.transitionDuration = defaultStyle.transitionDuration;
+        }, 800);
+      }
