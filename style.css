@@ -147,6 +147,23 @@ body {
   border-radius: 50%;
   transform: rotate(180deg); /* Add this line to rotate the element */
 }
+@keyframes subtleShake {
+  0%, 100% {
+    transform: rotate(180deg) translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: rotate(180deg) translateX(-2px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: rotate(180deg) translateX(2px);
+  }
+}
+#return-to-top:hover {
+  animation: subtleShake 0.5s linear infinite;
+}
+.animate {
+  animation: subtleShake 0.5s linear infinite;
+}
 
 
 html {
@@ -376,6 +393,8 @@ html {
   
   .bnz-banking-container {
     display: flex;
+    opacity: 0.9;
+    
     
     
     justify-content: space-between;
@@ -394,6 +413,9 @@ html {
     opacity: 0.9;
     box-shadow: 5px 5px 5px 5px #0d0d0d;
     border-radius: 10px;
+    transform: translateX(-50%);
+    transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
   }
   
   .bnz-banking-image {
@@ -405,6 +427,10 @@ html {
     
     
     
+  }
+  .move-right {
+    transform: translateX(-20%);
+    opacity: 1;
   }
   
   .bnz-banking-image img {
@@ -445,6 +471,7 @@ html {
   
   .bnz-banking-text h1 {
     margin-bottom: 20px; /* add some space below the heading */
+    
   }
   
   @media only screen and (max-width: 768px) {
@@ -468,7 +495,7 @@ html {
   .second{
     background-color: #2a2929;
     background-image: url('resources/shahadat-rahman-gnyA8vd3Otc-unsplash.jpg');
-   
+    
     background-size:cover;
     background-position: center;
   }
