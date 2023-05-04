@@ -503,7 +503,8 @@ span:nth-child(18) {
  
   }
   .box li{
-    margin: 25px;
+    margin-left: 25px;
+    margin-top: 5px;;
     color: #fff;
   }
   @media (max-width: 450px) {
