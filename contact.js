@@ -74,7 +74,7 @@ const element = document.getElementsByClassName('bnz-banking-text');
     });
     document.addEventListener('DOMContentLoaded', () => {
         const navLinks = document.querySelectorAll('.nav-list a');
-        const firstNavLink = navLinks[0];
+        const firstNavLink = navLinks[2];
         applyHoverEffect(firstNavLink);
       });
       
