@@ -349,6 +349,7 @@ h1 {
   max-width: 40ch;
   padding: 15px;
   transform: scale(0.94);
+  font-size: 40px;
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
 @keyframes scale {
@@ -461,29 +462,41 @@ span:nth-child(18) {
   
  
   .information-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    height: auto;
     position: relative;
-    height: 80vh;
-    background-color:#252027 ; 
-    box-shadow:10px 10px 10px 10px  #000000;/* Change this color to match your desired background color for the information section */
+    min-height: 80vh;
+    background-color: #252027;
+    box-shadow: 10px 10px 10px 10px #000000;
   }
+  
   .information-section-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  .information-section-container li{
+    font-size: 20px;
   }
   
   .box {
-    border-radius: 10px;
     
-    margin: 40px;
+    border-radius: 10px;
+    margin: 30px;
     width: 70%;
-    height: 200px;
+    padding: 15px;
     margin-bottom: 20px;
     background-color: #736775;
     opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s, transform 1s;
-  box-shadow:3px 3px 3px 3px #3e3c3c;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s;
+    box-shadow: 3px 3px 3px 3px #3e3c3c;
   }
   .box-visible {
     opacity: 0.8;
@@ -504,7 +517,7 @@ span:nth-child(18) {
   
     color: #fff;
   }
-  @media (max-width: 450px) {
+  /* @media (max-width: 450px) {
     .information-section{
         height: 120vh;
     }
@@ -546,18 +559,35 @@ span:nth-child(18) {
         height: 170vh;
     }
     .box{
-        height:300px;
+        height:400px;
     }
 }
 /*media query between height 280px and 320px*/
-@media (max-height: 781px) {
+/* @media (max-height: 781px) {
     .information-section {
-        height: 170vh;
+        height: 200vh;
     }
     .box{
         height:300px;
     }
 }
+@media (max-height: 600px) {
+    .information-section {
+        height: 220vh;
+    }
+    .box{
+        height:300px;
+    }
+} */ 
+footer {
+  background-color: #48404a;
+  color: #F7FFF7;
+  padding: 50px;
+  
+}
+
+
+
  
  
 
