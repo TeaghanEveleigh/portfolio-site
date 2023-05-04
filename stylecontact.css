@@ -36,7 +36,10 @@ body {
 }
 .dropdown-nav-link{
     color: #ffffff;
+    text-decoration: none!important;
+    position: relative;
 }
+
 .main-navigation .nav-list {
     list-style-type: none;
     margin: 0;
@@ -75,10 +78,11 @@ body {
 .menu-button:hover {
     background-color: #444;
 }
-.about{
+.contact{
     color: rgb(98, 87, 87);
     
 }
+
 
 
 .dropdown {
@@ -100,16 +104,18 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    text-decoration: none!important;
 }
 
 .dropdown-nav-item {
     text-align: center;
     padding: 8px;
+    text-decoration: none!important;
 }
 
 .dropdown-nav-link:hover {
     color: #ccc;
-    text-decoration: underline;
+    transform: translateY(-3px);
 }
 #return-to-top {
     transition: 0.5s ease-in-out;

@@ -36,12 +36,14 @@ body {
 }
 .dropdown-nav-link{
     color: #ffffff;
+    text-decoration: none!important;
 }
 .main-navigation .nav-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
+    
 }
 
 .main-navigation .nav-item {
@@ -54,7 +56,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #ccc;
+    color: #3e3c3c;
     text-decoration: underline;
     
 }
@@ -133,6 +135,8 @@ body {
 .dropdown-nav-link:hover {
     color: #ccc;
     text-decoration: underline;
+    transform: translateY(-3px);
+  transition: transform 0.2s ease;
 }
 
 .show {
