@@ -86,14 +86,15 @@ body {
 .dropdown {
     display: none;
     position: absolute;
-
+    background-color: #000;
     top: 100%;
     left: 0;
-    background-color: #000000;
+    
     width: 100%;
     z-index: 9999;
     overflow: hidden;
-    max-height: 200px;
+    height: 280px;
+    max-height: 250px!important;
     transition: max-height 2s ease-out; /* Add this line */
     border-bottom: solid white 1px;
 }
@@ -464,7 +465,7 @@ span:nth-child(18) {
   
   .information-section {
     position: relative;
-    height: 100vh;
+    height: 80vh;
     background-color:#252027 ; 
     box-shadow:10px 10px 10px 10px  #000000;/* Change this color to match your desired background color for the information section */
   }
@@ -476,7 +477,8 @@ span:nth-child(18) {
   
   .box {
     border-radius: 10px;
-    margin: 20px;
+    
+    margin: 40px;
     width: 70%;
     height: 200px;
     margin-bottom: 20px;
@@ -484,6 +486,7 @@ span:nth-child(18) {
     opacity: 0;
   transform: translateY(50px);
   transition: opacity 1s, transform 1s;
+  box-shadow:3px 3px 3px 3px #3e3c3c;
   }
   .box-visible {
     opacity: 0.8;
@@ -499,9 +502,20 @@ span:nth-child(18) {
    
  
   }
-  li{
+  .box li{
     margin: 25px;
     color: #fff;
+  }
+  @media (max-width: 450px) {
+    .information-section{
+        height: 120vh;
+    }
+    .box{
+        height: 350px;
+        margin:10px;
+        position: relative;
+        top: 100px
+    }
   }
 
 

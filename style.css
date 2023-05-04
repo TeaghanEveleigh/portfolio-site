@@ -93,7 +93,8 @@ body {
     width: 100%;
     z-index: 9999;
     overflow: hidden;
-    max-height: 200px!important;
+    height: 280px;
+    max-height: 250px!important;
     transition: max-height 2s ease-out; /* Add this line */
     border-bottom: solid white 1px;
 }
@@ -737,6 +738,7 @@ span:nth-child(18) {
   padding-left: 50px;
   padding-bottom: 15px;
 }
+
 
 
   

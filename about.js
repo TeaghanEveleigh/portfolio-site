@@ -155,5 +155,27 @@ const element = document.getElementsByClassName('bnz-banking-text');
       
       document.addEventListener("DOMContentLoaded", showBoxesOnScroll);
       window.addEventListener("scroll", showBoxesOnScroll);
-         
+      const fadeLinks = document.querySelectorAll('.fade-link');
+
+      fadeLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+          event.preventDefault();
+          const targetId = link.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          targetElement.style.opacity = 0;
+          targetElement.classList.add('fade-in');
+          setTimeout(() => {
+            targetElement.style.opacity = 1;
+          }, 50);
+        });
+      });
+      document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('.dropdown-nav-link');
+      
+        links.forEach(link => {
+          if (link.href === window.location.href) {
+            link.classList.add('show');
+          }
+        });
+      });         
       
