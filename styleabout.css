@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: hsl(285, 9%, 18%);
+    font-family: "Montserrat Medium";
 }
 
 .header-container {
