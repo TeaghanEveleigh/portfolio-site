@@ -133,3 +133,4 @@ const element = document.getElementsByClassName('bnz-banking-text');
           btnAfter.style.transitionDuration = defaultStyle.transitionDuration;
         }, 800);
       }
+      

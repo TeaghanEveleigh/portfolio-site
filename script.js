@@ -71,18 +71,7 @@ const element = document.getElementsByClassName('bnz-banking-text');
       }, delay);
       delay += 500;
     });
-    document.addEventListener('DOMContentLoaded', () => {
-      const gridItems = document.querySelectorAll('.grid-item');
-      
-      gridItems.forEach((item, index) => {
-        setTimeout(() => {
-          item.classList.add('hover-effect');
-          setTimeout(() => {
-            item.classList.remove('hover-effect');
-          }, 350);
-        }, index * 350);
-      });
-    });
+  
     document.addEventListener('DOMContentLoaded', () => {
       const navLinks = document.querySelectorAll('.nav-list a');
       const firstNavLink = navLinks[0];
@@ -146,31 +135,7 @@ const element = document.getElementsByClassName('bnz-banking-text');
         btnAfter.style.transitionDuration = defaultStyle.transitionDuration;
       }, 1000);
     }
-    const bnzBankingTextElements = document.querySelectorAll('.bnz-banking-text');
-
-    // Create a new intersection observer
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        // If the element is in view, add the 'slide-right' class
-        if (entry.isIntersecting) {
-          entry.target.classList.add('slide-right');
-        }
-      });
-    });
-    
-    // Observe each element
-    bnzBankingTextElements.forEach(element => {
-      observer.observe(element);
-    });
-    document.querySelector("#return-to-top").addEventListener("click", function () {
-      var element = this;
-      element.classList.remove("animate");
-    
-      // Force reflow, triggering the animation to run again
-      void element.offsetWidth;
-    
-      element.classList.add("animate");
-    });
+   
     
     
     
