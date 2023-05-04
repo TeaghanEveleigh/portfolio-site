@@ -541,11 +541,25 @@ span:nth-child(18) {
       }
     
   }
-  @media (max-width: 350px) and (max-width: 317px){
-    .information-section{
-        height:140vh;
+  @media (max-width: 280px) {
+    .information-section {
+        height: 170vh;
     }
-  }
+    .box{
+        height:300px;
+    }
+}
+/*media query between height 280px and 320px*/
+@media (max-height: 781px) {
+    .information-section {
+        height: 170vh;
+    }
+    .box{
+        height:300px;
+    }
+}
+ 
+ 
 
 
 
