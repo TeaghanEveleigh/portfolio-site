@@ -120,7 +120,7 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    color: #806e7d;
+    color: #fffdfd;
     width: 40px;
     height: 40px;
     display: block;
@@ -511,12 +511,36 @@ span:nth-child(18) {
         height: 120vh;
     }
     .box{
-        height: 350px;
+       
         margin:10px;
         position: relative;
         top: 100px
     }
   }
+  @media (max-width: 1300px) {
+    .information-section{
+        height: 120vh;
+    }
+    
+  }
+  @media (max-width: 1024px) {
+    .information-section{
+        height: 140vh;
+    }
+    @media (max-width: 414px) {
+        .information-section{
+            height: 120vh;
+        }
+        .box{
+           
+            margin:10px;
+            position: relative;
+            top: 100px
+        }
+      }
+    
+  }
+
 
 
 
