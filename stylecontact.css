@@ -465,3 +465,6 @@ span:nth-child(18) {
 .landing-text span {
     display: block; /* This will put each span on a new line */
 }
+.landing-section{
+    height: 100vh;
+}

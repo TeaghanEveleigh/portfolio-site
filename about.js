@@ -133,4 +133,27 @@ const element = document.getElementsByClassName('bnz-banking-text');
           btnAfter.style.transitionDuration = defaultStyle.transitionDuration;
         }, 800);
       }
+      function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+      
+      function showBoxesOnScroll() {
+        const boxes = document.querySelectorAll(".box");
+      
+        for (const box of boxes) {
+          if (isElementInViewport(box)) {
+            box.classList.add("box-visible");
+          }
+        }
+      }
+      
+      document.addEventListener("DOMContentLoaded", showBoxesOnScroll);
+      window.addEventListener("scroll", showBoxesOnScroll);
+         
       
