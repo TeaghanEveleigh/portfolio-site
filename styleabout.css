@@ -459,10 +459,7 @@ span:nth-child(18) {
     height: 100vh; /* This ensures the landing-section takes up the full viewport height */
   }
   
-  .landing-text-container {
-   
-  }
-  
+ 
   .information-section {
     position: relative;
     height: 80vh;
@@ -504,7 +501,7 @@ span:nth-child(18) {
   }
   .box li{
     margin-left: 25px;
-    margin-top: 5px;;
+  
     color: #fff;
   }
   @media (max-width: 450px) {
@@ -533,15 +530,22 @@ span:nth-child(18) {
             height: 120vh;
         }
         .box{
-           
+           height: 250px;
             margin:10px;
             position: relative;
             top: 100px
         }
+        .box li{
+            size: 10px;
+        }
       }
     
   }
-
+  @media (max-width: 350px) and (max-width: 317px){
+    .information-section{
+        height:140vh;
+    }
+  }
 
 
 
