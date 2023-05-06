@@ -240,6 +240,7 @@ html {
   background-color: #281e2a;
   border-radius: 10px;
   opacity: 0.9;
+  
 }
 .grid-item:hover .project-description p {
   background-color: #54394c;
@@ -446,7 +447,7 @@ html {
   .bnz-banking-text a,
   .bnz-banking-text a {
     background-color: #9f899f; /* white background for the button and links */
-    color: #434040; /* dark grey text for the button and links */
+    color: #000000; /* dark grey text for the button and links */
     border: none;
     padding: 10px 20px;
     text-decoration: none;
@@ -475,7 +476,7 @@ html {
   .bnz-banking-text p {
     line-height: 1.5; /* add some line-height to improve readability */
     padding: 20px;
-    color: #bbb2ba!important;
+    color: #ae88b1!important;
   }
   
   .bnz-banking-text h1 {
@@ -483,7 +484,7 @@ html {
     color: #ffffff!important;
   }
   .bnz-banking-text li{
-    color: #bbb2ba!important;
+    color: #ae88b1!important;
   }
   
   @media only screen and (max-width: 768px) {
