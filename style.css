@@ -234,6 +234,19 @@ html {
     position: absolute; /* Add this line */
     
 }
+.project-description p{
+  color: #ae88b1!important;
+  font-size: 25px;
+  background-color: #281e2a;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+.grid-item:hover .project-description p {
+  background-color: #54394c;
+
+  color: #fff!important;
+  
+}
 
 
 .grid-item:hover {
@@ -331,7 +344,7 @@ html {
     font-size: 1.4rem!important;
     line-height: 1.5;
     margin-bottom: 2rem;
-    color: #806e7d !important; 
+    color: #ae88b1 !important; 
     font-family: "Montserrat Medium";
   }
   .about-section-text{
