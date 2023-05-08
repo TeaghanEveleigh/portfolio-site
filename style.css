@@ -237,7 +237,7 @@ html {
 .project-description p{
   color: #ae88b1!important;
   font-size: 25px;
-  background-color: #281e2a;
+  background-color: #282429;
   border-radius: 10px;
   opacity: 0.9;
   
@@ -293,13 +293,13 @@ html {
     
 }
 #discord-bot{
-  background-image: url('resources/Discord-Black.webp');
+  background-image: url('resources/portfolioscreenshot.png');
     background-size: cover;
     background-position: center;
 
 }
 #chess-game{
-  background-image: url('resources/business_chess_1200074974.webp');
+  background-image: url('resources//istockphoto-1285308242-612x612.jpg');
     background-size:cover;
     background-position: center;
   
