@@ -296,19 +296,19 @@ html {
  
 
   #bnz-banking {
-    background-image: url('/image.png');
+    background-image: url('/resources/image.png');
     background-size: cover;
     background-position: center;
 }
 
 #discord-bot {
-    background-image: url('/Screenshot%202024-05-04%20125252.png');
+    background-image: url('/resources/Screenshot%202024-05-04%20125252.png');
     background-size: cover;
     background-position: center;
 }
 
 #chess-game {
-    background-image: url('/Screenshot%202024-05-04%20125539.png');
+    background-image: url('/resources/Screenshot%202024-05-04%20125539.png');
     background-size: cover;
     background-position: center;
 }
