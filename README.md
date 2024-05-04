@@ -8,7 +8,7 @@ This site is a showcase of my work and achievements as a web developer. You will
 
 To view my portfolio, please visit the following link:
 
-https://teaghaneveleigh.github.io/portfolio-site/index.html
+https://teaghaneveleigh.github.io/portfolio-site/projecthub.html
 
 Thank you for visiting and I look forward to connecting with you!!
 
