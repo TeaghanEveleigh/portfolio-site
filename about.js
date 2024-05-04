@@ -38,7 +38,7 @@ menuButton.addEventListener('click', function() {
 document.querySelector('#return-to-top').addEventListener('click', () => {
   /* Circle animation */
   document.querySelector('#return-to-top').animate(
-    { transform: ['rotate(90deg)', 'rotate(540deg)'] },
+ 
     { duration: 1500, easing: 'cubic-bezier(0.37, 0.48, 0.31, 1.47)', fill: 'forwards' }
   );
   
